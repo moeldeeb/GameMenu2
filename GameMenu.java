@@ -19,7 +19,7 @@ public class GameMenu extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public void startGame() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -131,5 +131,13 @@ public class GameMenu extends JFrame {
 		lblPleaseSelectMode.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPleaseSelectMode.setBounds(155, 152, 190, 15);
 		frame.getContentPane().add(lblPleaseSelectMode);
+	}
+	
+	public int getMode(){
+		return mode;
+	}
+	
+	public int getDiff(){
+		return difficulty;
 	}
 }
