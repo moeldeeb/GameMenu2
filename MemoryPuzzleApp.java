@@ -21,12 +21,16 @@ import javafx.util.Duration;
 
 public class MemoryPuzzleApp extends Application {
 
-    private static final int NUM_OF_PAIRS = 26;
-    private static final int NUM_PER_ROW = 8;
+    private static final int NUM_OF_PAIRS = 0;
+    private static final int NUM_PER_ROW = 0;
 
     private Tile selected = null;
     private int clickCount = 2;
-
+    boolean gameInitialize = false;
+    NUM_OF_PAIRS = getPairs();
+    NUM_PER_ROW = getRow():
+    
+    do{
     private Parent createContent() {
         Pane root = new Pane();
         root.setPrefSize(300, 300);
@@ -123,4 +127,5 @@ public class MemoryPuzzleApp extends Application {
     public static void main(String[] args) {
         launch(args);
     }
+    }while(gameInitialize = true);
 }
